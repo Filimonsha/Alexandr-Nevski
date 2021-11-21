@@ -8,3 +8,18 @@ border-bottom: 0.35rem solid #BC1A0B;
     max-width: 1112px;
     margin: 0 auto;
 }
+
+/* Link-back */
+.linkBack{
+    display: flex;
+    align-items:center
+}
+.linkBack-svg{
+    margin-right: 23px;
+}
+
+/* Historical-summary */
+
+.preview-image_historical-summary__link{
+    margin-bottom: 108px;
+}
