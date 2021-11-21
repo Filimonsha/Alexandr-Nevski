@@ -1,0 +1,10 @@
+.underline-link {
+font-size: 2rem;
+text-align: start;
+font-family: 'headers';
+border-bottom: 0.35rem solid #BC1A0B;
+}
+.preview-image_historical-container{
+    max-width: 1112px;
+    margin: 0 auto;
+}

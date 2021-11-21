@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Merriweather:400italic,400' rel='stylesheet'
+		type='text/css'>
+
+	<link rel="stylesheet" href="css/styleparallax.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="./css/stylepages.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>Пример: Sliding Panels</title>
+</head>
+
+<body>
+	<!-- menu_desktop -->
+	<div class="menu position-fixed menu-my d-flex flex-column justify-content-between align-items-center">
+		<img src="./img/logo.png" class="w-50" alt="">
+		<p>VR</p>
+	</div>
+	<!-- menu_mobile -->
+	<div class="menu position-fixed menu-my-mobile d-flex justify-content-between align-items-center">
+		<img src="./img/краткий-белый 1 (1).png" class="h-50" alt="">
+		<p>александр невский vr</p>
+		<div></div>
+	</div>
+	<!-- menu_btn -->
+	<div class="position-fixed btn-for-menu">
+		<div class="position-relative">
+			<a class="cd-nav-trigger cd-text-replace nav-visible" href="#primary-nav">Меню<span aria-hidden="true"
+					class="cd-icon"></span></a>
+		</div>
+	</div>
+	<div class="cd-projects-container">
+		<ul class="cd-projects-previews d-flex flex-column">
+			<li class="col slide-out">
+				<a href="#0">
+					<div class="cd-project-title">
+						<h2>Историческая сводка</h2>
+						<p>Хронология жизни Александра (прям по годам, года красивые - какая-то лента, которую можно
+							двигать вправо-влево, интерактивная)</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#0">
+					<div class="cd-project-title">
+						<h2>Древо династии Невских</h2>
+						<p>Со всплывающими подписями, кто какой князь</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#0">
+					<div class="cd-project-title">
+						<h2>Схема Ледового побоища</h2>
+						<p>а если можно интерактивность какую-то - вообще бы круть - вообще это похоже на популярные
+							игрушки про стратегии</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#0">
+					<div class="cd-project-title">
+						<h2>Житие Александра</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#1">
+					<div class="cd-project-title">
+						<h2>VR-блокбастер</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#1">
+					<div class="cd-project-title">
+						<h2>AR-приложение</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#2">
+					<div class="cd-project-title">
+						<h2>Игрушка. Латы</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#2">
+					<div class="cd-project-title">
+						<h2>Археологические артефакты</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#2">
+					<div class="cd-project-title">
+						<h2>Быт Новгорода</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#3">
+					<div class="cd-project-title">
+						<h2>Невский в науке и искусстве</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#3">
+					<div class="cd-project-title">
+						<h2>Храмы, церкви, часовни</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#3">
+					<div class="cd-project-title">
+						<h2>Орден Ал. Невского</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#4">
+					<div class="cd-project-title">
+						<h2>Забавный</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#4">
+					<div class="cd-project-title">
+						<h2>Простой</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#4">
+					<div class="cd-project-title">
+						<h2>Сложный</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#5">
+					<div class="cd-project-title">
+						<h2>Что такое 3D mapping и VR</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#5">
+					<div class="cd-project-title">
+						<h2>Идея проекта</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#5">
+					<div class="cd-project-title">
+						<h2>Интервью</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+			<li class="col slide-out">
+				<a href="#6">
+					<div class="cd-project-title">
+						<h2>Партнеры</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis nisi a saepe fugiat at
+							odio earum nihil, facere laborum.</p>
+					</div>
+				</a>
+			</li>
+		</ul> <!-- .cd-projects-previews -->
+		<ul class="cd-projects">
+			<li>
+				<div class="preview-image preview-image_historical-summary">
+					<div class="preview-image_historical-summary-wrap preview-image_historical-container">
+						<a href="" class="linkBack-svg preview-image_historical-summary__link">
+							<svg class="preview-image_historical-summary__svg" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="32.5" cy="32.5" r="32" stroke="#F4CEA2" />
+								<path d="M16.9238 31.999H49.9238L47.9238 33.999H16.9238V31.999Z" fill="#F4CEA2" />
+								<path d="M15.9236 31.9582L30.8818 17L31.023 19.6405L16.5675 34.1427L15.9236 31.9582Z" fill="#F4CEA2" />
+								<path d="M15 32.9043L29.882 47.7863L29.882 44.9998L16.4142 31.4901L15 32.9043Z" fill="#F4CEA2" />
+							</svg>
+							<span class="underline-link">александр невский</span>
+						</a>
+					</div>
+					<div class="cd-project-title">
+						<h2>Историческая сводка</h2>
+						<p>Хронология жизни Александра (прям по годам, года красивые - какая-то лента, которую можно
+							двигать вправо-влево, интерактивная)</p>
+					</div>
+				</div>
+
+				<div class="cd-project-info">
+					<p>
+						Ледо́вое побо́ище (нем. Schlacht auf dem Eise, лат. Prœlium glaciale — «Ледовая битва»), также
+						битва на Чудском озере (нем. Schlacht auf dem Peipussee) — битва, произошедшая на льду Чудского
+						озера в субботу 5 апреля по юлианскому календарю (12 апреля по пролептическому григорианскому
+						календарю) 1242 года с участием новгородцев и владимирцев под предводительством Александра
+						Невского, с одной стороны, и войсками Ливонского ордена — с другой.
+
+
+					</p>
+
+					<p>
+						В честь сражения установлен день воинской славы России, отмечаемый 5 (18) апреля.
+					</p>
+					<p>
+						В советской историографии Ледовое побоище считалось одной из крупнейших битв за всю историю
+						немецко-рыцарской агрессии в Прибалтике, и численность войск на Чудском озере оценивалась в
+						10—12 тыс. человек у Ордена и 15—17 тыс. человек новгородцев и их союзников (последнее число
+						соответствует оценке и Генрихом Латвийским[16] численностей русских войск при описании их
+						походов в Прибалтику в 1210—1220-х годах), то есть примерно на том же уровне, что и в
+						Грюнвальдской битве (1410) — до 11 тыс. человек у Ордена и 16—17 тыс. человек в
+						польско-литовском войске[17]. «Хроника», как правило, сообщает о малочисленности немцев в тех
+						сражениях, которые были ими проиграны, но даже в ней Ледовое побоище однозначно описано как
+						поражение немцев, в отличие, например, от Раковорской битвы (1268).</p>
+
+					<p>Как правило, минимальные оценки численности войск и потерь Ордена в битве соответствуют той
+						исторической роли, которую отводят конкретные исследователи данной битве и фигуре Александра
+						Невского в целом (подробнее см. Оценки деятельности Александра Невского). Вообще не упоминали
+						битву в своих трудах В. О. Ключевский и М. Н. Покровский. </p>
+
+					<p>Английский исследователь Дж. Феннел полагает, что значение Ледового побоища (и Невской битвы)
+						сильно преувеличено: «Александр делал только то, что многочисленные защитники Новгорода и Пскова
+						делали до него и что многие делали после него, — а именно устремлялись на защиту протяжённых и
+						уязвимых границ от отрядов захватчиков». С этим мнением солидарен и российский профессор И. Н.
+						Данилевский. Он отмечает, в частности, что битва уступала по своим масштабам сражению при Сауле
+						(1236 год), в котором литовцами был убит магистр ордена и 48 рыцарей, и сражению под Раковором;
+						современные событиям источники даже Невскую битву описывают более подробно и придают ей большее
+						значение[18]. </p>
+
+					<p>Немецкие историки полагают, что, ведя сражения на западных границах, Александр Невский не
+						преследовал сколько-нибудь цельной политической программы, однако успехи на Западе давали
+						некоторую морально-психологическую «компенсацию» за ужасы монгольского вторжения[19][20]. Многие
+						исследователи полагают преувеличенным и сам масштаб угрозы, которую Запад представлял для
+						Руси[19][21]. С другой стороны, Л. Н. Гумилёв, напротив, считал, что не татаро-монгольское
+						«иго», а именно католическая Западная Европа в лице Тевтонского ордена и Рижского
+						архиепископства представляла собой смертельную угрозу для самого существования Руси, а потому
+						роль побед Александра Невского в русской истории особенно велика[22]. </p>
+
+					<p>Немецкий историк Диттмар Дальманн пишет, что Ледовое побоище сыграло свою роль в формировании
+						русского национального мифа, в котором Александру Невскому отводилась роль «защитника
+						православия и земли Русской» перед лицом «западной угрозы»; победа в битве считалась оправданием
+						политических шагов князя в 1250-е годы. Особенно актуализировался культ Невского в сталинскую
+						эпоху, служа, по мнению Дальманна, своеобразным наглядным историческим примером для культа
+						самого Сталина. Апофеозом сталинского мифа об Александре Ярославиче и Ледовом побоище стал фильм
+						Сергея Эйзенштейна (см. ниже)[19]. </p>
+
+					<p>Историк Игорь Данилевский считает, что в битве участвовало несколько сотен человек. Так, со
+						стороны немцев это 35-40 братьев-рыцарей, около 160 кнехтов (в среднем по четыре слуги на одного
+						рыцаря) и наёмники-эсты («чудь без числа»), которые могли «расширить» отряд ещё на 100—200
+						воинов. При этом по меркам XIII века подобное войско считалось достаточно серьёзной силой
+						(предположительно, в период расцвета максимальная численность бывшего Ордена меченосцев в
+						принципе не превышала 100—120 рыцарей). Автор Ливонской рифмованной хроники также сетовал на то,
+						что русских было чуть ли не в 60 раз больше, что, по мнению Данилевского, хоть и является
+						преувеличением, всё же дает основание предполагать, что войско Александра значительно
+						превосходило силы крестоносцев.
+					</p>
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Древо династии Невских</h2>
+						<p>Со всплывающими подписями, кто какой князь</p>
+					</div>
+				</div>
+
+				<div class="cd-project-info">
+					<p>
+						Ледо́вое побо́ище (нем. Schlacht auf dem Eise, лат. Prœlium glaciale — «Ледовая битва»), также
+						битва на Чудском озере (нем. Schlacht auf dem Peipussee) — битва, произошедшая на льду Чудского
+						озера в субботу 5 апреля по юлианскому календарю (12 апреля по пролептическому григорианскому
+						календарю) 1242 года с участием новгородцев и владимирцев под предводительством Александра
+						Невского, с одной стороны, и войсками Ливонского ордена — с другой.
+
+
+					</p>
+
+					<p>
+						В честь сражения установлен день воинской славы России, отмечаемый 5 (18) апреля.
+					</p>
+					<p>
+						В советской историографии Ледовое побоище считалось одной из крупнейших битв за всю историю
+						немецко-рыцарской агрессии в Прибалтике, и численность войск на Чудском озере оценивалась в
+						10—12 тыс. человек у Ордена и 15—17 тыс. человек новгородцев и их союзников (последнее число
+						соответствует оценке и Генрихом Латвийским[16] численностей русских войск при описании их
+						походов в Прибалтику в 1210—1220-х годах), то есть примерно на том же уровне, что и в
+						Грюнвальдской битве (1410) — до 11 тыс. человек у Ордена и 16—17 тыс. человек в
+						польско-литовском войске[17]. «Хроника», как правило, сообщает о малочисленности немцев в тех
+						сражениях, которые были ими проиграны, но даже в ней Ледовое побоище однозначно описано как
+						поражение немцев, в отличие, например, от Раковорской битвы (1268).</p>
+
+					<p>Как правило, минимальные оценки численности войск и потерь Ордена в битве соответствуют той
+						исторической роли, которую отводят конкретные исследователи данной битве и фигуре Александра
+						Невского в целом (подробнее см. Оценки деятельности Александра Невского). Вообще не упоминали
+						битву в своих трудах В. О. Ключевский и М. Н. Покровский. </p>
+
+					<p>Английский исследователь Дж. Феннел полагает, что значение Ледового побоища (и Невской битвы)
+						сильно преувеличено: «Александр делал только то, что многочисленные защитники Новгорода и Пскова
+						делали до него и что многие делали после него, — а именно устремлялись на защиту протяжённых и
+						уязвимых границ от отрядов захватчиков». С этим мнением солидарен и российский профессор И. Н.
+						Данилевский. Он отмечает, в частности, что битва уступала по своим масштабам сражению при Сауле
+						(1236 год), в котором литовцами был убит магистр ордена и 48 рыцарей, и сражению под Раковором;
+						современные событиям источники даже Невскую битву описывают более подробно и придают ей большее
+						значение[18]. </p>
+
+					<p>Немецкие историки полагают, что, ведя сражения на западных границах, Александр Невский не
+						преследовал сколько-нибудь цельной политической программы, однако успехи на Западе давали
+						некоторую морально-психологическую «компенсацию» за ужасы монгольского вторжения[19][20]. Многие
+						исследователи полагают преувеличенным и сам масштаб угрозы, которую Запад представлял для
+						Руси[19][21]. С другой стороны, Л. Н. Гумилёв, напротив, считал, что не татаро-монгольское
+						«иго», а именно католическая Западная Европа в лице Тевтонского ордена и Рижского
+						архиепископства представляла собой смертельную угрозу для самого существования Руси, а потому
+						роль побед Александра Невского в русской истории особенно велика[22]. </p>
+
+					<p>Немецкий историк Диттмар Дальманн пишет, что Ледовое побоище сыграло свою роль в формировании
+						русского национального мифа, в котором Александру Невскому отводилась роль «защитника
+						православия и земли Русской» перед лицом «западной угрозы»; победа в битве считалась оправданием
+						политических шагов князя в 1250-е годы. Особенно актуализировался культ Невского в сталинскую
+						эпоху, служа, по мнению Дальманна, своеобразным наглядным историческим примером для культа
+						самого Сталина. Апофеозом сталинского мифа об Александре Ярославиче и Ледовом побоище стал фильм
+						Сергея Эйзенштейна (см. ниже)[19]. </p>
+
+					<p>Историк Игорь Данилевский считает, что в битве участвовало несколько сотен человек. Так, со
+						стороны немцев это 35-40 братьев-рыцарей, около 160 кнехтов (в среднем по четыре слуги на одного
+						рыцаря) и наёмники-эсты («чудь без числа»), которые могли «расширить» отряд ещё на 100—200
+						воинов. При этом по меркам XIII века подобное войско считалось достаточно серьёзной силой
+						(предположительно, в период расцвета максимальная численность бывшего Ордена меченосцев в
+						принципе не превышала 100—120 рыцарей). Автор Ливонской рифмованной хроники также сетовал на то,
+						что русских было чуть ли не в 60 раз больше, что, по мнению Данилевского, хоть и является
+						преувеличением, всё же дает основание предполагать, что войско Александра значительно
+						превосходило силы крестоносцев.
+					</p>
+				</div> <!-- .cd-project-info -->
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Схема Ледового побоища</h2>
+						<p>а если можно интерактивность какую-то - вообще бы круть - вообще это похоже на популярные
+							игрушки про стратегии</p>
+					</div>
+				</div>
+
+				<div class="cd-project-info">
+					<p>
+						Ледо́вое побо́ище (нем. Schlacht auf dem Eise, лат. Prœlium glaciale — «Ледовая битва»), также
+						битва на Чудском озере (нем. Schlacht auf dem Peipussee) — битва, произошедшая на льду Чудского
+						озера в субботу 5 апреля по юлианскому календарю (12 апреля по пролептическому григорианскому
+						календарю) 1242 года с участием новгородцев и владимирцев под предводительством Александра
+						Невского, с одной стороны, и войсками Ливонского ордена — с другой.
+
+
+					</p>
+
+					<p>
+						В честь сражения установлен день воинской славы России, отмечаемый 5 (18) апреля.
+					</p>
+					<p>
+						В советской историографии Ледовое побоище считалось одной из крупнейших битв за всю историю
+						немецко-рыцарской агрессии в Прибалтике, и численность войск на Чудском озере оценивалась в
+						10—12 тыс. человек у Ордена и 15—17 тыс. человек новгородцев и их союзников (последнее число
+						соответствует оценке и Генрихом Латвийским[16] численностей русских войск при описании их
+						походов в Прибалтику в 1210—1220-х годах), то есть примерно на том же уровне, что и в
+						Грюнвальдской битве (1410) — до 11 тыс. человек у Ордена и 16—17 тыс. человек в
+						польско-литовском войске[17]. «Хроника», как правило, сообщает о малочисленности немцев в тех
+						сражениях, которые были ими проиграны, но даже в ней Ледовое побоище однозначно описано как
+						поражение немцев, в отличие, например, от Раковорской битвы (1268).</p>
+
+					<p>Как правило, минимальные оценки численности войск и потерь Ордена в битве соответствуют той
+						исторической роли, которую отводят конкретные исследователи данной битве и фигуре Александра
+						Невского в целом (подробнее см. Оценки деятельности Александра Невского). Вообще не упоминали
+						битву в своих трудах В. О. Ключевский и М. Н. Покровский. </p>
+
+					<p>Английский исследователь Дж. Феннел полагает, что значение Ледового побоища (и Невской битвы)
+						сильно преувеличено: «Александр делал только то, что многочисленные защитники Новгорода и Пскова
+						делали до него и что многие делали после него, — а именно устремлялись на защиту протяжённых и
+						уязвимых границ от отрядов захватчиков». С этим мнением солидарен и российский профессор И. Н.
+						Данилевский. Он отмечает, в частности, что битва уступала по своим масштабам сражению при Сауле
+						(1236 год), в котором литовцами был убит магистр ордена и 48 рыцарей, и сражению под Раковором;
+						современные событиям источники даже Невскую битву описывают более подробно и придают ей большее
+						значение[18]. </p>
+
+					<p>Немецкие историки полагают, что, ведя сражения на западных границах, Александр Невский не
+						преследовал сколько-нибудь цельной политической программы, однако успехи на Западе давали
+						некоторую морально-психологическую «компенсацию» за ужасы монгольского вторжения[19][20]. Многие
+						исследователи полагают преувеличенным и сам масштаб угрозы, которую Запад представлял для
+						Руси[19][21]. С другой стороны, Л. Н. Гумилёв, напротив, считал, что не татаро-монгольское
+						«иго», а именно католическая Западная Европа в лице Тевтонского ордена и Рижского
+						архиепископства представляла собой смертельную угрозу для самого существования Руси, а потому
+						роль побед Александра Невского в русской истории особенно велика[22]. </p>
+
+					<p>Немецкий историк Диттмар Дальманн пишет, что Ледовое побоище сыграло свою роль в формировании
+						русского национального мифа, в котором Александру Невскому отводилась роль «защитника
+						православия и земли Русской» перед лицом «западной угрозы»; победа в битве считалась оправданием
+						политических шагов князя в 1250-е годы. Особенно актуализировался культ Невского в сталинскую
+						эпоху, служа, по мнению Дальманна, своеобразным наглядным историческим примером для культа
+						самого Сталина. Апофеозом сталинского мифа об Александре Ярославиче и Ледовом побоище стал фильм
+						Сергея Эйзенштейна (см. ниже)[19]. </p>
+
+					<p>Историк Игорь Данилевский считает, что в битве участвовало несколько сотен человек. Так, со
+						стороны немцев это 35-40 братьев-рыцарей, около 160 кнехтов (в среднем по четыре слуги на одного
+						рыцаря) и наёмники-эсты («чудь без числа»), которые могли «расширить» отряд ещё на 100—200
+						воинов. При этом по меркам XIII века подобное войско считалось достаточно серьёзной силой
+						(предположительно, в период расцвета максимальная численность бывшего Ордена меченосцев в
+						принципе не превышала 100—120 рыцарей). Автор Ливонской рифмованной хроники также сетовал на то,
+						что русских было чуть ли не в 60 раз больше, что, по мнению Данилевского, хоть и является
+						преувеличением, всё же дает основание предполагать, что войско Александра значительно
+						превосходило силы крестоносцев.
+					</p>
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Житие Александра</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+
+				<div class="cd-project-info">
+					<p>
+						Ледо́вое побо́ище (нем. Schlacht auf dem Eise, лат. Prœlium glaciale — «Ледовая битва»), также
+						битва на Чудском озере (нем. Schlacht auf dem Peipussee) — битва, произошедшая на льду Чудского
+						озера в субботу 5 апреля по юлианскому календарю (12 апреля по пролептическому григорианскому
+						календарю) 1242 года с участием новгородцев и владимирцев под предводительством Александра
+						Невского, с одной стороны, и войсками Ливонского ордена — с другой.
+
+
+					</p>
+
+					<p>
+						В честь сражения установлен день воинской славы России, отмечаемый 5 (18) апреля.
+					</p>
+					<p>
+						В советской историографии Ледовое побоище считалось одной из крупнейших битв за всю историю
+						немецко-рыцарской агрессии в Прибалтике, и численность войск на Чудском озере оценивалась в
+						10—12 тыс. человек у Ордена и 15—17 тыс. человек новгородцев и их союзников (последнее число
+						соответствует оценке и Генрихом Латвийским[16] численностей русских войск при описании их
+						походов в Прибалтику в 1210—1220-х годах), то есть примерно на том же уровне, что и в
+						Грюнвальдской битве (1410) — до 11 тыс. человек у Ордена и 16—17 тыс. человек в
+						польско-литовском войске[17]. «Хроника», как правило, сообщает о малочисленности немцев в тех
+						сражениях, которые были ими проиграны, но даже в ней Ледовое побоище однозначно описано как
+						поражение немцев, в отличие, например, от Раковорской битвы (1268).</p>
+
+					<p>Как правило, минимальные оценки численности войск и потерь Ордена в битве соответствуют той
+						исторической роли, которую отводят конкретные исследователи данной битве и фигуре Александра
+						Невского в целом (подробнее см. Оценки деятельности Александра Невского). Вообще не упоминали
+						битву в своих трудах В. О. Ключевский и М. Н. Покровский. </p>
+
+					<p>Английский исследователь Дж. Феннел полагает, что значение Ледового побоища (и Невской битвы)
+						сильно преувеличено: «Александр делал только то, что многочисленные защитники Новгорода и Пскова
+						делали до него и что многие делали после него, — а именно устремлялись на защиту протяжённых и
+						уязвимых границ от отрядов захватчиков». С этим мнением солидарен и российский профессор И. Н.
+						Данилевский. Он отмечает, в частности, что битва уступала по своим масштабам сражению при Сауле
+						(1236 год), в котором литовцами был убит магистр ордена и 48 рыцарей, и сражению под Раковором;
+						современные событиям источники даже Невскую битву описывают более подробно и придают ей большее
+						значение[18]. </p>
+
+					<p>Немецкие историки полагают, что, ведя сражения на западных границах, Александр Невский не
+						преследовал сколько-нибудь цельной политической программы, однако успехи на Западе давали
+						некоторую морально-психологическую «компенсацию» за ужасы монгольского вторжения[19][20]. Многие
+						исследователи полагают преувеличенным и сам масштаб угрозы, которую Запад представлял для
+						Руси[19][21]. С другой стороны, Л. Н. Гумилёв, напротив, считал, что не татаро-монгольское
+						«иго», а именно католическая Западная Европа в лице Тевтонского ордена и Рижского
+						архиепископства представляла собой смертельную угрозу для самого существования Руси, а потому
+						роль побед Александра Невского в русской истории особенно велика[22]. </p>
+
+					<p>Немецкий историк Диттмар Дальманн пишет, что Ледовое побоище сыграло свою роль в формировании
+						русского национального мифа, в котором Александру Невскому отводилась роль «защитника
+						православия и земли Русской» перед лицом «западной угрозы»; победа в битве считалась оправданием
+						политических шагов князя в 1250-е годы. Особенно актуализировался культ Невского в сталинскую
+						эпоху, служа, по мнению Дальманна, своеобразным наглядным историческим примером для культа
+						самого Сталина. Апофеозом сталинского мифа об Александре Ярославиче и Ледовом побоище стал фильм
+						Сергея Эйзенштейна (см. ниже)[19]. </p>
+
+					<p>Историк Игорь Данилевский считает, что в битве участвовало несколько сотен человек. Так, со
+						стороны немцев это 35-40 братьев-рыцарей, около 160 кнехтов (в среднем по четыре слуги на одного
+						рыцаря) и наёмники-эсты («чудь без числа»), которые могли «расширить» отряд ещё на 100—200
+						воинов. При этом по меркам XIII века подобное войско считалось достаточно серьёзной силой
+						(предположительно, в период расцвета максимальная численность бывшего Ордена меченосцев в
+						принципе не превышала 100—120 рыцарей). Автор Ливонской рифмованной хроники также сетовал на то,
+						что русских было чуть ли не в 60 раз больше, что, по мнению Данилевского, хоть и является
+						преувеличением, всё же дает основание предполагать, что войско Александра значительно
+						превосходило силы крестоносцев.
+					</p>
+				</div> <!-- .cd-project-info -->
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>VR-блокбастер</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>AR-приложение</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Игрушка. Латы</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Археологические артефакты</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Быт Новгорода</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Невский в науке и искусстве</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Храмы, церкви, часовни</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Орден Ал. Невского</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Забавный</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Простой</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Сложный</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Что такое 3D mapping и VR</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Идея проекта</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Интервью</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error modi natus voluptatibus veniam
+						molestias libero distinctio id facere numquam fugiat, et expedita iste unde commodi amet quo,
+						qui rem aliquid sunt! Illo sit quos rem, vitae numquam amet quod tempora dolor dolore, animi
+						laudantium! Pariatur maxime sequi excepturi commodi, nihil vel dolorem soluta explicabo
+						aspernatur quas distinctio dicta officiis itaque molestiae sit recusandae perferendis aliquam
+						vitae laudantium autem fugit? Magni suscipit voluptatem obcaecati incidunt quibusdam totam
+						dolore nulla dolorem ad quaerat deleniti consequuntur, ullam, enim iste? Eligendi corrupti
+						aperiam iusto obcaecati suscipit pariatur. Alias facere, facilis atque accusantium quis non
+						deserunt, beatae veritatis nisi, sunt hic rem blanditiis quaerat aliquam. Laborum, at rerum
+						aliquid libero repellat pariatur blanditiis modi dolor ducimus in id, perferendis odit! Eius ex
+						deserunt sequi a? Quos sequi nulla quasi quibusdam suscipit. Nesciunt eum alias assumenda
+						molestias ipsa quae aut dicta in vero dolores libero minus laboriosam reprehenderit, harum natus
+						sunt, ea suscipit. Nulla, nisi. Illo non fuga, aut facere aliquam blanditiis dolorum provident
+						voluptas rem sapiente autem quis fugiat aliquid a repudiandae quod, ullam cum illum? Illo esse
+						consectetur nisi sunt aut exercitationem, eos ducimus? A quo necessitatibus deserunt atque
+						inventore in suscipit vel eveniet.</p>
+				</div>
+			</li>
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Партнеры</h2>
+						<p>Красивый текст типа на древней бумаге</p>
+					</div>
+				</div>
+				<div class="cd-project-info">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam, doloribus tempora nulla
+						distinctio consequatur, dolores illum cum labore est aliquam atque architecto veritatis
+						excepturi, optio nam odio aspernatur quis.</p>
+				</div>
+			</li>
+		</ul> <!-- .cd-projects -->
+		<button class="scroll cd-text-replace">Scroll</button>
+	</div>
+	<!-- .cd-project-container -->
+
+<!-- home -->
+	<div class="cd-primary-nav nav-clickable nav-visible overflow-hidden" id="primary-nav">
+		<!-- home_mobile -->
+		<div class="mobile container">
+			<div class="d-flex w-75 justify-content-end primary-nav__logo">
+				<img src="./img/Group 150.png" class="w-50" alt="">
+			</div>
+			<img src="./img/cd-img-3.png" alt="" class="primary-nav__warrior">
+			<div class="d-flex align-items-end">
+				<h1>Александр<br> Невский</h1>
+				<div>
+					<h2 class="age">800 лет <br> славы</h2>
+				</div>
+			</div>
+			<div>
+				<ul>
+					<li><a href="#1" class="cd-nav-trigger position-static">vr и ar видео</a></li>
+					<li><a href="#0" class="cd-nav-trigger position-static">князь александр</a></li>
+					<li><a href="#2" class="cd-nav-trigger position-static">эпоха: xIII век</a></li>
+					<li><a href="#3" class="cd-nav-trigger position-static">память и почесть</a>
+					</li>
+					<li><a href="#4" class="cd-nav-trigger position-static">квесты</a></li>
+				</ul>
+			</div>
+			<div class="w-100 d-flex justify-content-end">
+				<ul class="ul2 d-flex pt-5">
+					<li><a href="#5" style="color: #DE2C1B;" class="cd-nav-trigger position-static">О проекте</a></li>
+					<li><a href="#6" class="cd-nav-trigger position-static">Партнеры</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- home_desktop -->
+		<div class="desc cd-background-wrapper">
+			<figure class="cd-floating-background">
+				<img src="img/cd-img-1.jpg" alt="image-1">
+				<img src="img/cd-img-3.png" alt="image-3">
+			</figure>
+			<figure class="cd-floating-background">
+				<div class="text">
+					<div class="d-flex w-25">
+						<img src="./img/Group 150.png" class="w-50" alt="">
+					</div>
+					<div class="d-flex align-items-end">
+						<h1>Александр<br> Невский</h1>
+						<div>
+							<h2 class="age">800 лет <br> славы</h2>
+						</div>
+					</div>
+					<div class="d-flex pt-4">
+						<div class="col-2"></div>
+						<div>
+							<div>
+								<ul>
+									<li><a href="#1" class="cd-nav-trigger position-static">vr и ar видео</a></li>
+									<li><a href="#0" class="cd-nav-trigger position-static">князь александр</a></li>
+									<li><a href="#2" class="cd-nav-trigger position-static">эпоха: xIII век</a></li>
+									<li><a href="#3" class="cd-nav-trigger position-static">память и почесть</a>
+									</li>
+									<li><a href="#4" class="cd-nav-trigger position-static">квесты</a></li>
+								</ul>
+							</div>
+							<div>
+								<ul class="ul2 d-flex pt-4">
+									<li><a href="#5" class="cd-nav-trigger position-static">О проекте</a></li>
+									<li><a href="#6" class="cd-nav-trigger position-static">Партнеры</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</figure>
+		</div>
+	</div>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="js/mainparallax.js"></script>
+</body>
+
+</html>
