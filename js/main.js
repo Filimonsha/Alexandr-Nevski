@@ -137,7 +137,6 @@ jQuery(document).ready(function ($) {
 
 	//open project
 	projectsPreviewWrapper.on('click', 'a', function (event) {
-
 		event.preventDefault();
 		if (animating == false) {
 			animating = true;
@@ -152,6 +151,7 @@ jQuery(document).ready(function ($) {
 			animating = true;
 			if (navigationTrigger.hasClass('project-open')) {
 				//close visible project
+				console.log('1')
 				$('.cd-projects-container').css({
 					'position': 'fixed'
 				})
@@ -159,11 +159,15 @@ jQuery(document).ready(function ($) {
 					'height': 'auto'
 				})
 				$('#primary-nav .desc').css({
+					'height': 'auto'
+				})
+				$('#primary-nav .mobile').css({
 					'height': 'auto'
 				})
 				navigationTrigger.add(projectsContainer).removeClass('project-open');
 				closeProject();
 			} else if (navigationTrigger.hasClass('nav-visible')) {
+				console.log('1')
 				$('.cd-projects-container').css({
 					'position': 'fixed'
 				})
@@ -171,6 +175,9 @@ jQuery(document).ready(function ($) {
 					'height': 'auto'
 				})
 				$('#primary-nav .desc').css({
+					'height': 'auto'
+				})
+				$('#primary-nav .mobile').css({
 					'height': 'auto'
 				})
 				number = $(this).attr('href').replace('#', '')
@@ -256,13 +263,20 @@ jQuery(document).ready(function ($) {
 	}
 
 	function openProject(projectPreview) {
-		$('.cd-projects-container').css({
-			'position': 'relative'
-		})
+		console.log('3')
+		if ($(window).height() * 1.5 <= $(window).width()) {
+
+			$('.cd-projects-container').css({
+				'position': 'relative'
+			})
+		}
 		$('#primary-nav').css({
 			'height': '100%'
 		})
 		$('#primary-nav .desc').css({
+			'height': '100%'
+		})
+		$('#primary-nav .mobile').css({
 			'height': '100%'
 		})
 		var projectIndex = projectPreview.index();
